@@ -45,7 +45,7 @@
   color: #fff;
 }
 
-.social-icon {
+.social-icon1 ,.social-icon2 {
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
@@ -59,9 +59,17 @@
   transition: all 0.3s ease;
 }
 
-.social-icon:hover {
+.social-icon1:hover {
   background-color: #0d6efd;
   border-color: #0d6efd;
+  color: #fff;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.social-icon2:hover {
+  background-color: green;
+  border-color: green;
   color: #fff;
   transform: translateY(-3px) scale(1.1);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
