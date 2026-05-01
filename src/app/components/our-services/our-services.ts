@@ -12,7 +12,7 @@ export class OurServices {
   {
     title: 'Clinical Chemistry',
     desc: 'Precision testing for vital organ functions, including blood glucose, lipid profiles, and kidney & liver function tests',
-    image: 'images/Footer.png'
+    image: 'images/Clinical.png'
   },
   {
     title: 'Immunology & Serology',
