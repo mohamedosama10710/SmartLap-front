@@ -1,4 +1,3 @@
-// 1. ضفنا الـ signal و الـ computed و الـ inject هنا
 import { Component, OnInit, computed, signal, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -21,7 +20,7 @@ export interface NavItem {
   styleUrl: './sidebar.css',
 })
 export class Sidebar implements OnInit {
-  private searchService = inject(Search); // حقن السيرفيس
+  private searchService = inject(Search); 
   private authService = inject(Auth);
 
   
@@ -92,17 +91,12 @@ export class Sidebar implements OnInit {
 
   ngOnInit(): void {}
 
-  // ضيف المتغير ده تحت المتغيرات بتاعتك
 searchQuery = signal('');
 
-// ضيف الفانكشن دي 
 onSearch(event: Event): void {
 const inputElement = event.target as HTMLInputElement;
     
-    // 1. بنبعت الكلمة للسيرفيس مباشرة
     this.searchService.updateQuery(inputElement.value);
     
-    // 2. بنطبعها من السيرفيس نفسها عشان نتأكد إن السيرفيس استلمتها صح
-    // console.log('Search Query in Service:', this.searchService.query());
 }
 }
