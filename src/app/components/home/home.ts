@@ -5,7 +5,7 @@ import { OurServices } from "../our-services/our-services";
 
 @Component({
   selector: 'app-home',
-  imports: [Contact, OurTestimonials, OurServices],
+  imports: [Contact, OurTestimonials, OurServices,],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
